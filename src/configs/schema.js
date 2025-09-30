@@ -1,6 +1,4 @@
-import { pgTable } from "drizzle-orm/pg-core";
-import { Subscript } from "lucide-react";
-
+import { pgTable, serial, varchar, timestamp, boolean } from "drizzle-orm/pg-core";
 export const Users= pgTable('users', {
     id: serial('id').primaryKey(),
     name: varchar('name', { length: 256 }).notNull(),
