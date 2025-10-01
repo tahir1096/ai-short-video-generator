@@ -1,8 +1,9 @@
-import { Button } from "../components/ui/button";
+import Header from "./dashboard/_components/Header";
+import Sidebar from "./dashboard/_components/Sidebar";
 export default function Home() {
   return (
     <div>
-      <Button variant="outline">Button</Button>
+      <Header/>
     </div>
   )
 

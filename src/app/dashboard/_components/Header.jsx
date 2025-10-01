@@ -7,11 +7,11 @@ function Header() {
     return (
         <div className='w-full flex items-center justify-between px-8 py-4 border-b'>
             <div className='flex items-center gap-2'>
-                <Image src="/image.png" alt="Logo" width={30} height={30} />
+                <a href = '/'><Image src="/image.png" alt="Logo" width={30} height={30} /></a>
                 <h2>Generate AI Videos</h2>
             </div>
             <div className='flex items-center gap-4'>
-                <Button>Dashboard</Button>
+                <Button><a href="/dashboard">Dashboard</a></Button>
                 <UserButton/>
             </div>
         </div>
