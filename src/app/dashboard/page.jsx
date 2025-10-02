@@ -1,7 +1,12 @@
+'use client'
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
 import { Button } from "../../components/ui/button";
 import Link from "next/link";
+import { useState } from "react";
+import EmptyState from "./EmptyState";
 export default function DashboardPage() {
+const [videoList] = useState([]);
+
   return (
     <>
       <SignedIn>
@@ -13,6 +18,8 @@ export default function DashboardPage() {
         </Button>
        </Link>
       </div>
+      {videoList?.length === 0 && <div>
+        <EmptyState/></div>}
       </SignedIn>
 
       <SignedOut>

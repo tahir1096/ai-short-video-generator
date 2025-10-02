@@ -3,11 +3,16 @@ import Layout from '../layout'
 
 function createVideo() {
   return (
-    <div>
-                <div className='flex items-center justify-center h-[80vh]'>
-            <h1 className='text-3xl font-bold'>Create New Video</h1>
+    <div className='md:px-20'>
+      <h2 className='font-bold text-4xl text-primary text-center'>
+        Create New Video
+      </h2>
+      <div>
+
+      </div>
+
     </div>
-    </div>
+
   )
 }
 
