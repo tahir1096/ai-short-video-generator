@@ -12,9 +12,9 @@ import {
 function Sidebar() {
   const MenuOption = [
     { id: 1, name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
-    { id: 2, name: 'Create Video', path: '/createvideo', icon: Video },
-    { id: 3, name: 'Upgrade', path: '/upgrade', icon: ArrowUpRightSquare },
-    { id: 4, name: 'Account', path: '/accounts', icon: CircleUserRound }
+    { id: 2, name: 'Create Video', path: '/dashboard/createvideo', icon: Video },
+    { id: 3, name: 'Upgrade', path: '/dashboard/upgrade', icon: ArrowUpRightSquare },
+    { id: 4, name: 'Account', path: '/dashboard/accounts', icon: CircleUserRound }
   ]
 
   const path = usePathname()

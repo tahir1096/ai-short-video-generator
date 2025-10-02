@@ -1,15 +1,23 @@
-"use client";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
-
-export default function Dashboard() {
+import { Button } from "../../components/ui/button";
+import Link from "next/link";
+export default function DashboardPage() {
   return (
-    <div>
+    <>
       <SignedIn>
-        <div>Welcome to your dashboard!</div>
+      <div className="w-full flex items-center justify-between px-8 py-4 border-b">
+        <h2 className="font-bold text-2xl text-primary">Dashboard</h2>
+       <Link href="/dashboard/createvideo">
+        <Button>
+          + Create New
+        </Button>
+       </Link>
+      </div>
       </SignedIn>
+
       <SignedOut>
         <RedirectToSignIn />
       </SignedOut>
-    </div>
+    </>
   );
 }
