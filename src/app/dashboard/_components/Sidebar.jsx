@@ -20,7 +20,7 @@ function Sidebar() {
   const path = usePathname()
 
   return (
-    <div className="w-60 h-screen bg-gradient-to-b from-indigo-700 via-indigo-800 to-indigo-900 text-white shadow-xl p-5 hidden md:block">
+    <div className="w-60 h-full bg-gradient-to-b from-indigo-700 via-indigo-800 to-indigo-900 text-white shadow-xl p-5 hidden md:block">
       <div className="grid gap-2">
         {MenuOption.map(item => {
           const Icon = item.icon
