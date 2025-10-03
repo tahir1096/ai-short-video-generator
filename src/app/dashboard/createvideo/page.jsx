@@ -11,14 +11,11 @@ function CreateVideo() {
     duration: ""
   });
 
-  // ✅ Update formData when user selects options
   const onHandleInputChange = (fieldName, fieldValue) => {
     setFormData(prev => ({ ...prev, [fieldName]: fieldValue }));
   };
   const GetVideoScript=()=> {
-    // const result = await axios.post('/api/generate-script')
   }
-  // ✅ Create Video handler (Gemini API call)
   const handleCreateVideo = async () => {
     try {
       const res = await fetch("/api/generate-script", {
