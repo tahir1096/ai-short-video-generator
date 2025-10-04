@@ -51,7 +51,6 @@ function CreateVideo() {
 
         {/* ✅ Create Video Button */}
         <button
-          onClick={handleCreateVideo}
           className='bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-primary/90 transition'
         >
           Create Video
